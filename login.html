@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+<title>Login - Ghazi Gym</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<header>
+
+<h1 class="logo">GHAZI GYM</h1>
+
+<div id="menuToggle">☰</div>
+
+<nav id="navMenu">
+
+<a href="page.html">Home</a> <a href="programs.html">Programs</a> <a href="trainer.html">Trainer</a> <a href="login.html">Login</a>
+
+</nav>
+
+</header>
+
+<section class="auth">
+
+<h2>Login</h2>
+
+<input type="text" id="loginUser" placeholder="Username">
+
+<input type="password" id="loginPass" placeholder="Password">
+
+<button onclick="login()">Login</button>
+
+<hr>
+
+<h2>Signup</h2>
+
+<input type="text" id="signupUser" placeholder="Username">
+
+<input type="password" id="signupPass" placeholder="Password">
+
+<button onclick="signup()">Create Account</button>
+
+<p id="authMessage"></p>
+
+</section>
+
+<script src="script.js"></script>
+
+</body>
+</html>

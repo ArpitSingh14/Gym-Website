@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+<title>GHAZI Gym</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <canvas id="particles"></canvas>
+
+
+<div id="loader">
+<h1>GHAZI GYM</h1>
+</div>
+
+<header>
+
+<h1 class="logo">GHAZI GYM</h1>
+
+<div id="menuToggle">☰</div>
+
+<nav id="navMenu">
+
+<a href="#home">Home</a> <a href="programs.html">Programs</a> <a href="#stats">Stats</a> <a href="trainer.html">Trainers</a> <a href="#gallery">Gallery</a> <a href="#contact">Contact</a> <a href="login.html">Login</a>
+
+</nav>
+
+</header>
+
+<!-- HERO -->
+
+<section id="home" class="hero">
+
+<div class="overlay"></div>
+
+<div class="hero-content">
+
+<h2>GHAZI GYM</h2>
+
+<p id="heroText">Transform Your Body</p>
+
+<button class="btn">Join Now</button>
+
+</div>
+
+</section>
+
+<!-- PROGRAM PREVIEW -->
+
+<section id="programs" class="programs reveal">
+
+<h2>Programs</h2>
+
+<div class="card-container">
+
+<div class="card">
+<h3>Strength</h3>
+<p>Build muscle and power</p>
+</div>
+
+<div class="card">
+<h3>Cardio</h3>
+<p>Improve endurance</p>
+</div>
+
+<div class="card">
+<h3>CrossFit</h3>
+<p>High intensity training</p>
+</div>
+
+<div class="card">
+<h3>Yoga</h3>
+<p>Improve flexibility</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- WORKOUT SCHEDULE -->
+
+<section class="schedule reveal">
+
+<h2>Workout Schedule</h2>
+
+<select id="daySelect">
+
+<option value="monday">Monday</option>
+<option value="tuesday">Tuesday</option>
+<option value="wednesday">Wednesday</option>
+<option value="thursday">Thursday</option>
+<option value="friday">Friday</option>
+
+</select>
+
+<div id="scheduleOutput">
+<p>Select a day to see workouts</p>
+</div>
+
+</section>
+
+<!-- TRAINERS -->
+
+<section id="trainers" class="trainers reveal">
+
+<h2>Our Trainer</h2>
+
+<div class="trainer-container">
+
+<div class="trainer">
+<img src="images/gym12.jpg">
+<h3>Amil Ghazi</h3>
+<p>Strength Coach</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- STATS -->
+
+<section id="stats" class="stats reveal">
+
+<h2>Our Achievements</h2>
+
+<div class="stats-container">
+
+<div class="stat">
+<h3 class="counter" data-target="500">0</h3>
+<p>Members</p>
+</div>
+
+<div class="stat">
+<h3 class="counter" data-target="5">0</h3>
+<p>Trainers</p>
+</div>
+
+<div class="stat">
+<h3 class="counter" data-target="25">0</h3>
+<p>Machines</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- GALLERY -->
+
+<section id="gallery" class="gallery reveal">
+
+<h2>Gym Gallery</h2>
+
+<div class="slider">
+
+<img src="images/gym1.jpg" class="slide active">
+<img src="images/gym2.jpg" class="slide">
+<img src="images/gym3.jpg" class="slide">
+<img src="images/gym7.jpg" class="slide">
+
+</div>
+
+</section>
+
+<!-- 3D CAROUSEL -->
+
+<section class="carousel-section">
+
+<h2>Gym Highlights</h2>
+
+<div class="carousel" id="carousel">
+
+<div class="carousel-track" id="carouselTrack">
+
+<img src="images/gym1.jpg">
+<img src="images/gym2.jpg">
+<img src="images/gym3.jpg">
+<img src="images/gym8.jpg">
+<img src="images/gym5.jpg">
+<img src="images/gym6.jpg">
+
+</div>
+
+</div>
+
+</section>
+
+<!-- EQUIPMENT -->
+
+<section class="equipment">
+
+<h2>Gym Equipment</h2>
+
+<div class="equipment-box">
+
+<img src="images/gym1.jpg">
+
+</div>
+
+</section>
+
+<!-- VIDEOS -->
+
+<section id="videos" class="videos reveal">
+
+<h2>Workout Videos</h2>
+
+<div class="video-container">
+
+<video controls>
+<source src="pushups.mp4" type="video/mp4">
+</video>
+
+<video controls>
+<source src="pushups.mp4" type="video/mp4">
+</video>
+
+</div>
+
+</section>
+
+<!-- MEMBERSHIP -->
+
+<section class="membership">
+
+<h2>Join Our Gym</h2>
+
+<input type="text" placeholder="Name">
+<input type="email" placeholder="Email">
+
+<select>
+
+<option>Basic Plan</option>
+<option>Standard Plan</option>
+<option>Premium Plan</option>
+
+</select>
+
+<button onclick="alert('Membership Submitted!')">Join</button>
+
+</section>
+
+<script src="script.js"></script>
+
+</body>
+</html>
+

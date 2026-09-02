@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<title>Programs - GHAZI Gym</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<header>
+
+<h1>GHAZI</h1>
+
+<nav>
+
+<a href="page.html">Home</a> <a href="programs.html">Programs</a> <a href="trainers.html">Trainers</a> <a href="gallery.html">Gallery</a> <a href="contact.html">Contact</a>
+
+</nav>
+
+</header>
+
+<section class="program-dashboard">
+
+<h2>Fitness Tools</h2>
+
+<div class="tabs">
+
+<button onclick="openTab('workout')">Workout Builder</button> <button onclick="openTab('recommend')">Workout Plan</button> <button onclick="openTab('diet')">Diet Plan</button> <button onclick="openTab('bmi')">BMI Calculator</button>
+
+</div>
+
+<div class="tab-content">
+
+<div id="workout" class="tab">
+
+<h3>Build Your Workout</h3>
+
+<select id="muscle">
+
+<option value="chest">Chest</option>
+<option value="legs">Legs</option>
+<option value="back">Back</option>
+
+</select>
+
+<button onclick="buildWorkout()">Generate</button>
+
+<p id="builderOutput"></p>
+
+</div>
+
+<div id="recommend" class="tab">
+
+<h3>Workout Recommendation</h3>
+
+<select id="level">
+
+<option value="beginner">Beginner</option>
+<option value="intermediate">Intermediate</option>
+<option value="advanced">Advanced</option>
+
+</select>
+
+<button onclick="suggestWorkout()">Suggest Workout</button>
+
+<p id="workoutOutput"></p>
+
+</div>
+
+<div id="diet" class="tab">
+
+<h3>Diet Plan Generator</h3>
+
+<select id="goal">
+
+<option value="weightloss">Weight Loss</option>
+<option value="muscle">Muscle Gain</option>
+
+</select>
+
+<button onclick="generateDiet()">Generate Diet</button>
+
+<p id="dietOutput"></p>
+
+</div>
+
+<div id="bmi" class="tab">
+
+<h3>BMI Calculator</h3>
+
+<input type="number" id="height" placeholder="Height (cm)">
+<input type="number" id="weight" placeholder="Weight (kg)">
+
+<button onclick="calculateBMI()">Calculate</button>
+
+<p id="bmiResult"></p>
+
+</div>
+
+</div>
+
+</section>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
